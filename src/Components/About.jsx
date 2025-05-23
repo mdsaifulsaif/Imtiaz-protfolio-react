@@ -1,5 +1,6 @@
 import React from "react";
 import { FaEnvelope, FaPhoneAlt, FaDownload } from "react-icons/fa";
+import aboutImage from "../assets/imtiaz for bio.jpg"; // Replace with your image path
 
 function About() {
   return (
@@ -9,7 +10,7 @@ function About() {
         <div className="relative">
           <div className="w-64 h-64 rounded-full bg-gradient-to-r from-purple-600 via-indigo-500 to-blue-500 p-1">
             <img
-              src="/your-image.jpg" // Replace with your profile image path
+              src={aboutImage}
               alt="Profile"
               className="w-full h-full object-cover rounded-full"
             />

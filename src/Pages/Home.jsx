@@ -9,6 +9,8 @@ import { Helmet } from "react-helmet-async";
 import Hero from "../Components/Hero";
 import BioSection from "../Components/BioSection";
 import About from "../Components/About";
+import EducationExperience from "../Components/EducationExperience";
+import WhatIDo from "../Components/WhatIDo";
 
 function Home() {
   return (
@@ -19,6 +21,8 @@ function Home() {
       <Hero></Hero>
       <BioSection></BioSection>
       <About></About>
+      <WhatIDo></WhatIDo>
+      <EducationExperience></EducationExperience>
       <h1>home</h1>
     </div>
   );
