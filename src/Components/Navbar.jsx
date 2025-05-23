@@ -26,9 +26,18 @@ const Navbar = () => {
     <>
       {/* Desktop Menu */}
 
-      <NavLink to="/">Home</NavLink>
-      <NavLink to="/about">About</NavLink>
-      <NavLink to="/myprofile">My Profile</NavLink>
+      <NavLink className="text-white font-semibold" to="/">
+        Home
+      </NavLink>
+      <NavLink className="text-white font-semibold" to="/about">
+        About
+      </NavLink>
+      <NavLink className="text-white font-semibold" to="/education">
+        Education
+      </NavLink>
+      <NavLink className="text-white font-semibold" to="/">
+        Get in Tuch
+      </NavLink>
 
       <div className="flex items-center justify-center gap-3 cursor-pointer">
         <Link to="/myprofile">
@@ -46,7 +55,7 @@ const Navbar = () => {
         <Link
           to="/auth/login"
           onClick={handleLogout}
-          className=" px-5 py-2 bg-blue-600 text-white rounded-xl hover:bg-blue-700 transition"
+          className=" px-5 py-2 bg-green-500 text-white rounded-xl hover:bg-blue-700 transition"
         >
           {user ? "LogOut" : "Login"}
         </Link>
@@ -55,11 +64,11 @@ const Navbar = () => {
   );
 
   return (
-    <nav className="w-full bg-gray-200 mb-4 shadow-md relative">
+    <nav className=" bg-gradient-to-r from-purple-600 via-indigo-500 to-blue-500 w-full bg-gray-200 mb-4 shadow-md relative">
       <div className="max-w-7xl mx-auto px-5  md:px-12 flex items-center justify-between h-16">
         {/* Logo */}
 
-        <div className="text-2xl font-bold text-blue-600">
+        <div className="text-2xl font-bold text-white">
           <Link to="/">Job House</Link>
         </div>
 
@@ -69,7 +78,7 @@ const Navbar = () => {
         <div
           className={`w-full z-20 absolute ${
             clickIcon ? "top-15" : "-top-100"
-          }   items-center left-0 md:hidden flex flex-col py-5  gap-3 bg-gray-200 transition-all`}
+          }   items-center  left-0 md:hidden flex flex-col py-5  gap-3 bg-gray-800 transition-all`}
         >
           {menuItem}
         </div>
@@ -77,7 +86,11 @@ const Navbar = () => {
         {/* Mobile Hamburger Icon (Optional for mobile toggle) */}
         <div className="md:hidden">
           <button onClick={handleMenuIcon}>
-            {clickIcon ? <IoClose size={30} /> : <FaBarsStaggered size={30} />}
+            {clickIcon ? (
+              <IoClose className="text-white" size={30} />
+            ) : (
+              <FaBarsStaggered className="text-white" size={30} />
+            )}
           </button>
         </div>
       </div>

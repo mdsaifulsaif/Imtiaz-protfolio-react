@@ -11,13 +11,14 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white py-10 mt-10">
+    <footer className="bg-gradient-to-r from-purple-600 via-indigo-500 to-blue-500 text-white py-10 mt-10">
       <div className="max-w-6xl mx-auto px-4 grid gap-8 md:grid-cols-3 text-sm">
         {/* Website Info */}
         <div>
           <div className="flex items-center gap-2 mb-4">
-            <FaLeaf className="text-green-600 text-2xl" />
-            <h2 className="text-2xl font-bold text-green-400 mb-3">Ninja</h2>
+            <h2 className="text-2xl font-bold text-green-400 mb-3">
+              Hosain Imtiaz
+            </h2>
           </div>
           <p className="text-gray-300">
             Your trusted platform for plant lovers and care-takers. Grow with
@@ -60,8 +61,8 @@ const Footer = () => {
       </div>
 
       {/* Bottom Bar */}
-      <div className="text-center text-gray-500 text-sm mt-10 border-t border-gray-700 pt-4">
-        © 2025 Ninja User. All rights reserved.
+      <div className="text-center text-gray-100 text-sm mt-10 border-t border-gray-700 pt-4">
+        © 2025 Hosain Imtiaz. All rights reserved.
       </div>
     </footer>
   );

@@ -1,8 +1,9 @@
 import { FaRocket } from "react-icons/fa";
+import LottieAnimationHero from "./LottieAnimationHero";
 
 export default function Hero() {
   return (
-    <section className=" text-white min-h-screen flex flex-col lg:flex-row items-center justify-between px-6 md:px-10 py-16 gap-10">
+    <section className="   text-white min-h-screen flex flex-col lg:flex-row items-center mt-10 md:mt-0 md:justify-between px-6 md:px-10 md:py-16 gap-10 md:gap-10">
       <div className="w-full lg:w-1/2">
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
           <span className="bg-white bg-gradient-to-r from-purple-600 via-indigo-500 to-blue-500 text-white px-4 py-2 rounded-xl inline-block mb-4">
@@ -14,6 +15,9 @@ export default function Hero() {
       </div>
 
       <div className="w-full lg:w-1/2 text-gray-200 text-base sm:text-lg leading-relaxed text-left lg:text-right">
+        <div className="flex    justify-center md:justify-end mb-5 ">
+          <LottieAnimationHero></LottieAnimationHero>
+        </div>
         <p className="text-white ">
           Helping businesses scale with data-driven marketing, creative
           strategies, and compelling content. Let’s turn clicks into conversions

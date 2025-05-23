@@ -11,6 +11,8 @@ import BioSection from "../Components/BioSection";
 import About from "../Components/About";
 import EducationExperience from "../Components/EducationExperience";
 import WhatIDo from "../Components/WhatIDo";
+import CallToAction from "../Components/CallToAction";
+import LottiAnimation1 from "../Components/LottiAnimation1";
 
 function Home() {
   return (
@@ -23,6 +25,8 @@ function Home() {
       <About></About>
       <WhatIDo></WhatIDo>
       <EducationExperience></EducationExperience>
+      <CallToAction></CallToAction>
+
       <h1>home</h1>
     </div>
   );
