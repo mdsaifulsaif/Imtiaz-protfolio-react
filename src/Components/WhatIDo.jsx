@@ -38,7 +38,10 @@ function WhatIDo() {
   return (
     <section className="bg-gray-900 text-white py-16 px-6 md:px-20">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl font-bold mb-6 text-center">🚀 What I Do</h2>
+        <h2 className="text-4xl text-center font-bold mb-4">
+          What <span className="text-green-300">I Do</span>
+        </h2>
+
         <p className="text-gray-300 text-lg mb-12 text-center max-w-3xl mx-auto">
           I have over 1+ years of experience in marketing, where I have
           developed a strong understanding of digital strategies, brand
@@ -64,12 +67,6 @@ function WhatIDo() {
               <p className="text-white">{service.description}</p>
             </div>
           ))}
-        </div>
-
-        <div className="text-center mt-12">
-          <h3 className="text-2xl font-bold text-white">
-            📄 A summary of My Resume
-          </h3>
         </div>
       </div>
     </section>

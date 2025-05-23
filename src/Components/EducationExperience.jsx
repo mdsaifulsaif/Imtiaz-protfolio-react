@@ -18,6 +18,9 @@ const Item = ({ icon, title, org, date, description }) => (
 function EducationExperience() {
   return (
     <section className="bg-gray-900 text-white py-16 px-6 md:px-20">
+      <h2 className="text-4xl font-bold text-center mb-[80px]">
+        📄 A summary <span className="text-green-300"> of My Resume</span>
+      </h2>
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
         {/* Education */}
         <div>
