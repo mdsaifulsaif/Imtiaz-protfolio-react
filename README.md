@@ -1,4 +1,4 @@
-﻿# Imtiaz-protfolio-react
+
 # 🎯 Imtiaz Portfolio – Digital Marketer
 
 A modern, responsive portfolio website for a **Digital Marketer**, built using the latest web technologies like **React**, **Tailwind CSS**, and **React Router**. This site is designed to showcase services, projects, testimonials, and contact details in an attractive and user-friendly way.
